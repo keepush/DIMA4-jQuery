@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. DOM 접근</title>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script>
+        // 1) JS를 이용해서 DOM에 접근
+        // window.onload = function () {
+        //    document.getElementsByTagName('li')[1].style.backgroundColor = "red";
+        // }
+
+        // 2) JS를 이용해서 DOM에 접근
+        // window.onload = function () {
+        //   document.querySelector('li:nth-child(1)').style.backgroundColor = "blue";
+        // }
+
+        // 3) jQuery 를 이용해서 접근
+        $(function () {
+            $('li:nth-child(3)').css('background-color', 'yellow');
+        });
+    </script>
+</head>
+
+<body>
+    <h2>2. DOM 접근</h2>
+    <p>첫 번째 문장</p>
+    <div class="main">
+        <p>두 번째 문장</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</body>
+
+</html>

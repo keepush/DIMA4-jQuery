@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+    <style>
+        table {
+            width: 1000px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            border-collapse: collapse;
+
+        }
+
+        thead>tr {
+            background-color: #50a9ef;
+        }
+
+        tr {
+            border-bottom: 1px dotted gray;
+        }
+
+        td,
+        th {
+            padding: 5px;
+        }
+
+        tbody tr:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
+    </style>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/exam15_deleteMember.js"></script>
+</head>
+
+<body>
+    <h2>[연습문제]</h2>
+    <div id="active">
+        <button id="receive">수신</button><br><br>
+        <input type="checkbox" id="checkAll">
+        <input type="button" id="deleteMember" value="삭제">
+    </div><br>
+
+    <!-- 고객 목록 -->
+    <div id="member">
+        <table>
+            <thead>
+                <tr>
+                    <th>선택</th>
+                    <th>이름</th>
+                    <th>이메일</th>
+                    <th>전화번호</th>
+                    <th>버튼</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" value=""></td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+</html>

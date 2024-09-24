@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. val()</title>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#read').on('click', function () {
+                let value = $('#txt1').val();           // 읽기, 쓰기 모두 가능  기본값=읽기
+                $('p#target').text(value);
+            });
+
+            // txt2를 읽어 txt1에 표시
+            $('#write').on('click', function () {
+                let value = $('#txt2').val();               // input 상자에 있는 건 val,  시작/끝 태그는 html/text
+                $('#txt1').val(value);                  // 쓰기
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h2>val()</h2>
+    <div>
+        <input type="text" id="txt1">
+        <input type="text" id="txt2">
+        <input type="button" id="read" value="읽기">
+        <input type="button" id="write" value="쓰기">
+    </div>
+    <p id="target"></p>
+</body>
+
+</html>
